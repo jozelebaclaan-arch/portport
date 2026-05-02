@@ -36,7 +36,7 @@
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
-            color: #62e08c;
+            color: #3bc60d;
         }
 
         .nav-menu {
@@ -47,13 +47,13 @@
 
         .nav-menu a {
             text-decoration: none;
-            color:#62e08c;
+            color:#09c713;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         .nav-menu a:hover {
-            color: #4fb780a2;
+            color: #08e351a2;
         }
         /* Hero Section */
         .hero {
@@ -67,42 +67,12 @@
             position: relative;
             overflow: hidden;
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
-            animation: float 20s infinite linear;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-
         .hero-content {
             max-width: 800px;
             padding: 0 2rem;
             z-index: 2;
             animation: fadeInUp 1s ease;
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1rem;
@@ -124,12 +94,12 @@
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 10px 30px rgba(4, 225, 70, 0.3);
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.4);
+            box-shadow: 0 15px 40px rgba(52, 219, 105, 0.4);
         }
 
         /* Sections */
@@ -145,7 +115,7 @@
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: #2c3e50;
+            color: #06ca0d;
         }
 
         /* About Section */
@@ -170,7 +140,7 @@
             width: 100%;
             max-width: 400px;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(36, 171, 6, 0.1);
         }
 
         /* Projects Section */
@@ -184,23 +154,22 @@
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(3, 153, 65, 0.1);
             transition: all 0.3s ease;
             position: relative;
         }
 
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+            box-shadow: 0 30px 80px rgba(37, 133, 2, 0.399);
         }
 
         .project-image {
             height: 250px;
-            background: linear-gradient(45deg, #3498db, #2c3e50);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: rgb(10, 189, 16);
             font-size: 4rem;
         }
 
@@ -210,11 +179,11 @@
 
         .project-content h3 {
             margin-bottom: 1rem;
-            color: #2c3e50;
+            color: #0fca08;
         }
 
         .project-content p {
-            color: #666;
+            color: #2fc708;
             margin-bottom: 1.5rem;
         }
 
@@ -226,8 +195,8 @@
         }
 
         .tech-tag {
-            background: #3498db;
-            color: white;
+            background: #30a206;
+            color: #ffffff;
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
             font-size: 0.8rem;
@@ -239,7 +208,7 @@
         }
 
         .project-links a {
-            color: #3498db;
+            color: #1fc40a;
             text-decoration: none;
             font-weight: bold;
         }
@@ -250,37 +219,16 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
         }
-
-        .contact-info h3 {
-            margin-bottom: 2rem;
-            color: #2c3e50;
-        }
-
         .contact-item {
             display: flex;
             align-items: center;
             margin-bottom: 1.5rem;
         }
-
-        .contact-item i {
-            width: 40px;
-            height: 40px;
-            background: #3498db;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            font-size: 1.1rem;
-        }
-
         .contact-form {
-            background: #f8f9fa;
+            background:#62e08c;
             padding: 2.5rem;
             border-radius: 20px;
         }
-
         .form-group {
             margin-bottom: 1.5rem;
         }
@@ -298,12 +246,12 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #3498db;
+            border-color: #1ac20b;
         }
 
         .submit-btn {
-            background: #3498db;
-            color: white;
+            background: #09c503;
+            color: rgb(255, 255, 255);
             padding: 1rem 2rem;
             border: none;
             border-radius: 10px;
@@ -314,12 +262,12 @@
         }
 
         .submit-btn:hover {
-            background: #2980b9;
+            background: #18bc1299;
         }
 
         /* Footer */
         .footer {
-            background: #2c3e50;
+            background: #62e08c;
             color: white;
             text-align: center;
             padding: 3rem 2rem 2rem;
@@ -362,7 +310,7 @@
                 width: 100%;
                 text-align: center;
                 transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                box-shadow: 0 10px 27px rgba(5, 196, 24, 0.171);
                 padding: 2rem 0;
             }
 
@@ -417,7 +365,7 @@
             left: 0;
             width: 0;
             height: 3px;
-            background: #3498db;
+            background: #05c809;
             transition: width 0.3s ease;
         }
 
